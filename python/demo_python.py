@@ -8,7 +8,7 @@ class AirChat:
         self.truth_value = 2
         
     def is_user_online(self, condition):
-        return condition and self.truth_value or self.false_value
+        return self.truth_value if condition else self.false_value
 
     def video_chat(self):
         raise NotImplemented
@@ -26,7 +26,7 @@ class AirChat:
 
     @static_method
     def fetch_resource(url):
-        secure = is_moving(condition) and 'ERROR' or 'SUCCESS'
+        secure = 'ERROR' if is_moving(condition) else 'SUCCESS'
         flags = (secure > 4 and merge) and 'both' or 'not'
 
 
