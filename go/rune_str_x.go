@@ -5,7 +5,7 @@ import (
 )
 
 func RuneStr(s string) {
-	for _, r := range []rune(s) {
+	for _, r := range s {
 		fmt.Print(string(r))
 	}
 }
