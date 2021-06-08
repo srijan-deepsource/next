@@ -10,10 +10,12 @@ class AirChat:
     def is_user_online(self, condition):
         return condition and self.truth_value or self.false_value
 
-    def video_chat(self):
+    @staticmethod
+    def video_chat():
         raise NotImplemented
 
-    def find_user_name(self, user_id, users_mapping):
+    @staticmethod
+    def find_user_name(user_id, users_mapping):
         if user_id in users_mapping:
             user_name = users_mapping[user_id]
         else:
@@ -25,6 +27,7 @@ class AirChat:
                 users_mapping.pop(user_id)
 
     @static_method
+    @staticmethod
     def fetch_resource(url):
         secure = is_moving(condition) and 'ERROR' or 'SUCCESS'
         flags = (secure > 4 and merge) and 'both' or 'not'
