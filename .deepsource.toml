@@ -20,3 +20,11 @@ enabled = true
 
   [analyzers.meta]
   import_root = "github.com/srijan-deepsource/next"
+
+[[transformers]]
+name = "isort"
+enabled = true
+
+[[transformers]]
+name = "black"
+enabled = true
