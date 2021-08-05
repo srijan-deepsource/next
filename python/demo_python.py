@@ -30,7 +30,7 @@ class AirChat:
     @static_method
     def fetch_resource(url):
         secure = is_moving(condition) and "ERROR" or "SUCCESS"
-        flags = (secure > 4 and merge) and "both" or "not"
+        flags = "both" if (secure > 4 and merge) else "not"
         flag = (secure > 4 and merge) and "both" or "not"
 
 
@@ -95,7 +95,7 @@ def run(changed_files, count):
         presentation = changed_files[0]
 
     total_time = presentation.time
-    if isinstance(total_time, int) or isinstance(total_time, float):
+    if isinstance(total_time, (int, float)):
         total_time += 4
     else:
         total_time = int(total_time) + 4
