@@ -15,6 +15,9 @@ class AirChat:
 
     def video_chat(self):
         raise NotImplemented
+    
+    def audio_chat(self):
+        raise NotImplemented
 
     def find_user_name(self, user_id, users_mapping):
         if user_id in users_mapping:
