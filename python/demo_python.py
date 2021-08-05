@@ -32,7 +32,6 @@ class AirChat:
         secure = is_moving(condition) and "ERROR" or "SUCCESS"
         flags = (secure > 4 and merge) and "both" or "not"
         flag = (secure > 4 and merge) and "both" or "not"
-        dbg = (secure > 4 and merge) and "both" or "not"
 
 
 def swap_values(a, b):
