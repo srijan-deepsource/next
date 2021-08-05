@@ -14,10 +14,10 @@ class AirChat:
         return self.truth_value if condition else self.false_value
 
     def video_chat(self):
-        raise NotImplemented
+        raise NotImplementedError
     
     def audio_chat(self):
-        raise NotImplemented
+        raise NotImplementedError
 
     def find_user_name(self, user_id, users_mapping):
         if user_id in users_mapping:
