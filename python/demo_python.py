@@ -1,12 +1,15 @@
 import os
 import sys
 
+
 class AirChat:
     """Base class for AirChat web application."""
 
-    def __init__(self, ):
+    def __init__(
+        self,
+    ):
         self.truth_value = 2
-        
+
     def is_user_online(self, condition):
         return condition and self.truth_value or self.false_value
 
@@ -26,8 +29,9 @@ class AirChat:
 
     @static_method
     def fetch_resource(url):
-        secure = is_moving(condition) and 'ERROR' or 'SUCCESS'
-        flags = (secure > 4 and merge) and 'both' or 'not'
+        secure = is_moving(condition) and "ERROR" or "SUCCESS"
+        flags = (secure > 4 and merge) and "both" or "not"
+        flag = (secure > 4 and merge) and "both" or "not"
 
 
 def swap_values(a, b):
@@ -36,8 +40,9 @@ def swap_values(a, b):
     a = b
     b = temp
 
+
 def simplifable_if_statement(arg1, arg2):
-    if arg1 and not arg2: # [simplifiable-if-statement]
+    if arg1 and not arg2:  # [simplifiable-if-statement]
         return True
     else:
         return False
@@ -62,13 +67,13 @@ def update_issues(k, d):
 
 def odd_or_even(x):
     if x % 2 == 0 and x >= 0:
-        print('Even')
+        print("Even")
     elif x % 2 == 0 and x < 0:
-        return 'Even and Negative'
+        return "Even and Negative"
     elif x % 2 != 0 and x < 0:
-        return 'Odd and Negative.'
+        return "Odd and Negative."
     else:
-        return 'Odd'
+        return "Odd"
 
 
 def log_exception(msg, variable_mapping):
@@ -76,11 +81,13 @@ def log_exception(msg, variable_mapping):
     logger.info("-> Error : %s" % msg)
 
     logger.info(
-        "-> Error %s %d" % (
+        "-> Error %s %d"
+        % (
             msg,
             issue_code,
         )
     )
+
 
 def run(changed_files, count):
     """Run the AirChat applicaition."""
@@ -88,10 +95,7 @@ def run(changed_files, count):
         presentation = changed_files[0]
 
     total_time = presentation.time
-    if (
-        isinstance(total_time, int)
-        or isinstance(total_time, float)
-    ):
+    if isinstance(total_time, int) or isinstance(total_time, float):
         total_time += 4
     else:
         total_time = int(total_time) + 4
