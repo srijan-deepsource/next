@@ -15,7 +15,7 @@ class AirChat:
 
     def video_chat(self):
         raise NotImplementedError
-    
+
     def audio_chat(self):
         raise NotImplementedError
 
